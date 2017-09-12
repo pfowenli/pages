@@ -35,7 +35,7 @@ var projects = {
             //"images": ["images/197x148.gif"]
         },
         {
-            "title": "Just Java Android App",
+            "title": "Just Java - Android app development",
             "dates": "Sep 2017",
             "description": "Android application development",
             "URL": "https://github.com/pfowenli/android-app-development/tree/master/basics/JustJava"
@@ -55,12 +55,13 @@ var bio = {
 	},
 	"biopic": "images/me.jpg ",
 	"skills": [
-	    "programming language: Java, JavaScript, Python", 
-	    "Java framework: Spring, Hibernate",
-	    "data analytcis in Python: Matplotlib, Scikit-learn, Pandas, Tensorflow", 
-	    "database: MySQL, PostgreSQL, MongoDB",
-	    "mobile application: Android",
-	    "version control: git"
+	    "programming language - Java, JavaScript, Python", 
+	    "Java framework - Spring, Hibernate",
+	    "JavaScript library - jQuery",
+	    "Python data analytcis package - Matplotlib, Scikit-learn, Pandas, Tensorflow", 
+	    "database - MySQL, PostgreSQL, MongoDB",
+	    "mobile application - Android",
+	    "version control - git"
 	]
 };
 
@@ -87,9 +88,15 @@ var education = {
 	],
 	"onlineCourses": [
 	    {
+            "title": "Data Visualization and D3.js",
+            "school": "Udacity",
+            "dates": "Sep 2017 - current",
+            "URL": "https://www.udacity.com/courses/ud507"
+	    },
+	    {
             "title": "Android Basics: User Input",
             "school": "Udacity & Google",
-            "dates": "Sep 2017",
+            "dates": "Aug 2017 - Sep 2017",
             "URL": "https://www.udacity.com/courses/ud836"
 	    },
 	    {
@@ -126,7 +133,7 @@ if (bio.skills.length > 0) {
     $("#header").append(HTMLskillsStart);
     // loop over each skill
     for (var i = 0; i < bio.skills.length; i++) {
-    	$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
+    	$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]+"<br><br>"));
     }
 }
 
@@ -146,9 +153,11 @@ projects.display = function () {
 		$(".project-entry:last").append(HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].URL));
 		$(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[i].dates));
 		$(".project-entry:last").append(HTMLprojectDescription.replace("%data%", projects.projects[i].description));
-		//for (var j = 0; j < projects.projects[i].images.length; j++) {
-		//	$(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[i].images[j]));
-		//}
+		/*
+		for (var j = 0; j < projects.projects[i].images.length; j++) {
+			$(".project-entry:last").append(HTMLprojectImage.replace("%data%", projects.projects[i].images[j]));
+		}
+		*/
 	}
 };
 
@@ -161,9 +170,8 @@ education.display = function() {
 	    $(".education-entry:last").append(HTMLschoolMajor.replace("%data%", education.schools[i].majors.join(", ")));
 	}
 
-	$(".education-entry:last").append(HTMLonlineClasses);
 	for (var i = 0; i < education.onlineCourses.length; i++) {
-		$("#education").append(HTMLschoolStart);
+		$("#online").append(HTMLonlineStart);
 		$(".education-entry:last").append(HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].URL) + HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school));
 	    $(".education-entry:last").append(HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates));
 	    $(".education-entry:last").append(HTMLonlineURL.replace("%data%", "").replace("#", education.onlineCourses[i].URL));
