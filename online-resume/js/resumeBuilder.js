@@ -28,18 +28,18 @@ var work = {
 var projects = {
     "projects": [
         {
+            "title": "Just Java - User Input",
+            "dates": "Sep 2017",
+            "description": "Android application development",
+            "URL": "https://github.com/pfowenli/android-app-development/tree/master/basics/JustJava"
+            //"images": ["images/197x148.gif"]
+        },
+        {
             "title": "Belgian Traffic Signs Prediction Using Neural Networks",
             "dates": "Aug 2017",
             "description": "deep learning with TensorFlow",
             "URL": "https://github.com/pfowenli/data-science-in-python/blob/master/TensorFlow/tensorflow-for-beginners.ipynb"
             //"images": ["images/197x148.gif"]
-        },
-        {
-            "title": "Just Java - Android app development",
-            "dates": "Sep 2017",
-            "description": "Android application development",
-            "URL": "https://github.com/pfowenli/android-app-development/tree/master/basics/JustJava"
-            //"images": ["images/197x148.gif", "images/197x148.gif"]
         }
     ]
 };
