@@ -28,6 +28,13 @@ var work = {
 var projects = {
     "projects": [
         {
+            "title": "Digits Data Classification",
+            "dates": "Oct 2017",
+            "description": "Scikit Learn",
+            "URL": "http://nbviewer.jupyter.org/github/pfowenli/data-science-in-python/blob/b18ba4ecdd6336ba680b9380c414b055f529cc27/Scikit-Learn/scikit-learn-digits-dataset.ipynb"
+            //"images": ["images/197x148.gif"]
+        },
+        {
             "title": "Just Java - User Input",
             "dates": "Sep 2017",
             "description": "Android application development",
@@ -37,8 +44,8 @@ var projects = {
         {
             "title": "Belgian Traffic Signs Prediction Using Neural Networks",
             "dates": "Aug 2017",
-            "description": "deep learning with TensorFlow",
-            "URL": "https://github.com/pfowenli/data-science-in-python/blob/master/TensorFlow/tensorflow-for-beginners.ipynb"
+            "description": "TensorFlow",
+            "URL": "http://nbviewer.jupyter.org/github/pfowenli/data-science-in-python/blob/b18ba4ecdd6336ba680b9380c414b055f529cc27/TensorFlow/tensorflow-for-beginners.ipynb"
             //"images": ["images/197x148.gif"]
         }
     ]
